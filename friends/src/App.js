@@ -19,8 +19,9 @@ class App extends Component {
   }
 
   sortHandler = (event) => {
-    const ID = event.target.id;
-this.setState({sort:ID})  }
+    console.log(event.target.id)
+this.setState({sort:event.target.id}) 
+}
 
 NinputHandler = (event) => {
   const value = event.target.value
@@ -64,7 +65,6 @@ console.log(response)})
         .catch (err => console.log(err));
     }
   render() {
-    console.log(this.state.name, this.state.age, this.state.email)
     return (
       <div className="App">
       <form className='form' action="">

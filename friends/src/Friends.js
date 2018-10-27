@@ -8,7 +8,7 @@ class Friends extends Component {
     }
     render() {
         let sorted = this.props.sort;
-    let SortedFriends = this.props.friends.sort(function(a,b) {return (a[`${sorted}`] > b[`${sorted}`])})
+    let SortedFriends = this.props.friends.sort(function(a,b) { return (a[`${sorted}`] < b[`${sorted}`])})
 
     return(
 <div>
